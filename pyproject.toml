@@ -1,0 +1,24 @@
+[build-system]
+requires=["setuptools"]
+
+
+[project]
+name = "pathRAG"
+version = "1.0.0"
+description = "graphRAG implementation from https://github.com/BUPT-GAMMA/PathRAG/tree/main"
+dependencies = [
+    "requests",
+    "flask",
+    "flask-cors",
+]
+
+authors = [
+  { name = "Juan Cardenas", email = "cardenas.juan5453@gmail.com" }
+]
+requires-python = "<=3.13"
+
+[tool.setuptools]
+package-dir = {"" = "PathRAG"}
+
+[tool.setuptools.packages.find]
+where = ["PathRAG"]
